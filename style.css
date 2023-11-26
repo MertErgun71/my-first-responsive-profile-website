@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+/* HEADER BÖLÜMÜ */
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-items{
+    list-style: none;
+    display: flex;
+}
+
+.nav-item{
+    padding: 15px;
+}
+
+.nav-item a{
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(101, 101, 101);
+    transition: 0.3s;
+}
+
+.nav-item a:hover{
+    color: black;
+}
+
+#active{
+    color: black;
+}
+
+
+/* PROFİL BÖLÜMÜ */
+
+.begin-main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.begin{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0 50px 0;
+}
+
+.begin-left{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.begin-left p{
+    font-weight: 400;
+    color: #21243D;
+    font-size: 16px;
+    margin: 25px 0;
+}
+
+.begin-left h1{
+    font-weight: 700;
+    color: #21243D;
+    text-align: left;
+    font-size: 44px;
+}
+
+.download-button{
+    width: 208px;
+    height: 47px;
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+    background-color: #FF6464;
+    padding: 10px 20px;
+    border: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.download-button:hover{
+    background-color: #c94f4f;
+}
+
+.begin-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.p-photo{
+    height: 260px;
+    border-radius: 50%;
+    padding-bottom: 30px;
+}
+
+
+/* GEÇMİŞ POSTLAR BÖLÜMÜ */
+
+.recent-main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #EDF7FA;
+}
+
+.recentposts{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.recent-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0 10px 0;
+}
+
+.recent-top p{
+    font-size: 17px;
+    font-weight: 700;
+    color: #21243D;
+}
+
+.recent-top a{
+    color: #00A8CC;
+    text-decoration: none;
+}
+
+.recent-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent-container{
+    background-color: white;
+    width: 45%;
+    min-width: 280px;
+    height: fit-content;
+    margin: 0 0 20px 0;
+    padding: 20px;
+}
+
+.blog-link{
+    text-decoration: none;
+    font-size: 25px;
+    color: #21243D;
+}
+
+.recent-container_date{
+    display: flex;
+    margin: 10px 0;
+    color: #21243D;
+}
+
+.recent-container span{
+    font-weight: 400;
+    color: #21243D;
+}
+
+
+/* ÖNE ÇİKAN İŞLER */
+
+.featured-main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featuredworks{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.featuredworks p{
+    font-size: 17px;
+    font-weight: 700;
+    color: #21243D;
+    padding: 20px 0;
+}
+
+.featured-container{
+    display: flex;
+    padding: 20px 0;
+}
+
+.featured-header{
+    text-decoration: none;
+    color: #21243D;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 0 5px;
+}
+
+.featured-date{
+    width: 100%;
+    display: flex;
+    padding: 15px 5px;
+}
+
+.featured-date p{    
+    padding: 10px 5px;
+}
+
+.featured-date a{
+    text-decoration: none;
+    color: white;
+    background-color: #142850;
+    padding: 3px 10px;
+    border-radius: 16px;
+    cursor: text;
+}
+
+.featured-right p{
+    font-weight: 400;
+    padding:  5px;
+}
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-top a{
+    color: #21243D;
+    font-size: 35px;
+    padding: 0 15px;
+}
+
+.footer-bottom{
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* RESPONSİVE */
+
+@media screen and (max-width: 700px){
+    .begin-left h1{
+        font-size: 35px;
+    }
+
+    .recent-bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .begin{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .featured-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .featured-date{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:400px){
+    .begin{
+        width: 100%;
+    }
+    
+    .begin-left h1{
+        font-size: 30px;
+    }
+
+    .download-button{
+        width: 192px;
+    }
+}
+
+@media screen and (max-width:350px){
+    .download-button{
+        width: 150px;
+        font-size: 13px;
+    }
+}
